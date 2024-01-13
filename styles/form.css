@@ -1,0 +1,6 @@
+head, body{
+	background-image: url("/images/background.jpg");
+}
+p{
+	font-size:11;
+}

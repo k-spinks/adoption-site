@@ -1,0 +1,68 @@
+.container{
+  width: 80%;
+  margin: 0 auto;
+}
+
+header{
+  background-color: #FBE6B7;
+}
+
+header::after{
+  content: '';
+  display:table;
+  clear:both;
+}
+
+.logo{
+  float: left;
+  padding: 10px 0;
+  width: 100px;
+}
+
+nav{
+  float:right;
+}
+
+nav ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li{
+  display:inline-block;
+  margin-left: 70px;
+  padding-top: 23px;
+
+  position: relative;
+}
+
+nav a{
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14;
+  margin: 1%;
+  
+}
+
+nav a:hover{
+  color: #C19B6C;
+}
+
+nav a::before{
+  content: '';
+  display: block;
+  height: 5px; 
+  background-color: #C19B6C;
+  
+  position: absolute;
+  top: 0;
+  width: 0%;
+  
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before{
+  width: 100%;
+}

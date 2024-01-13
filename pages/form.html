@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Adoption</title>
+    <link rel="stylesheet" href="/styles/style.css"/>
+    <link rel="stylesheet" href="/styles/navbar.css"/>
+    <link rel="stylesheet" href="/styles/form.css"/>
+    
+  </head>
+
+  <header>
+    <div class="container">
+      <img class="logo" src="images/logo.jpg" alt="logo" >
+      <nav>
+        <ul>
+          <li><a href="/pages/index.html">Home</a></li>
+          <li><a href="/pages/info.html">Info</a></li>
+          <li><a href="#">Records</a></li>
+          <li><a href="/pages/form.html">Contact Form</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <form action="http://mscs-php.uwstout.edu/2022FA/CS/248/001/spinksk9295/FinalProject/form.php" method="POST" >
+  <body>
+    <fieldset>
+      <legend>Contact Form</legend>
+  
+      <label class="heading" for="firstname">First Name:</label>
+      <input type="text" name="firstname" id="firstname" /><br />
+  
+      <label class="heading" for="lastname">Last Name:</label>
+      <input type="text" name="lastname" id="lastname" /><br />
+  
+      <label class="heading" for="email">Email address</label>
+      <input type="text" name="email" id="email"/><br />
+      
+      <label class="heading" for="number">Phone Number</label>
+      <input type="text" name="number" id="number" /><br />
+  
+      <label class="heading">Preferred form of contact</label>
+      <label><input type="radio" name="contact" value="phone" />Phone Number</label>
+      <label><input type="radio" name="contact" value="email" />Email</label>
+      <p>***We will contact you via alternative contact information if private contact fails***</p>
+  
+    </fieldset>
+      <input type="submit" />
+    </form>
+  </body>
+</html>
